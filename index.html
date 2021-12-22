@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@323;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo Stack</title>
+</head>
+<body>
+    <div class="toolbox-container">
+        <div class="filter-container">
+            <div class="filter-colors-container">
+                <div class="lightpink filter-color"></div>
+            </div>
+            <div class="filter-colors-container">
+                <div class="lightblue filter-color"></div>
+            </div>
+            <div class="filter-colors-container">
+                <div class="lightgreen filter-color"></div>
+            </div>
+            <div class="filter-colors-container">
+                <div class="black filter-color"></div>
+            </div>
+        </div>
+        <div class="action-container">
+            <div class="add action-container-icons">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="remove action-container-icons">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="trash-bin-container">
+            <i class="fas fa-trash-alt"></i>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="collective-ticket-container">
+            <!-- <div class="ticket-container">
+                <div class="head-color lightblue"></div>
+                <div class="ticket-sub-container">
+                    <h2 class="task-id">#sampleId</h2>
+                    <p class="task-desc" contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, adipisci.</p>
+                </div>
+                <div class="lock-container">
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-lock-open"></i>This icon is for unlock. Use icon class to invert lock state.
+
+                </div>
+            </div> -->
+        </div>
+        
+        <div class="modal-container">
+            <div class="task-container">
+                <textarea placeholder="Enter your task here" class = "task-area"></textarea>
+            </div>
+            <div class="priority-container">
+                <div class="priority-color-container">
+                    <div class="lightpink priority-color"></div>
+                    <div class="lightblue priority-color"></div>
+                    <div class="lightgreen priority-color"></div>
+                    <div class="black priority-color border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
